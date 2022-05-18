@@ -1,5 +1,6 @@
 class Animal:
     _totalAnimales=0
+
     
     def __init__(self,nombre,edad,habitat,genero,zona=None):
         self._nombre = nombre
@@ -18,16 +19,7 @@ class Animal:
         else:
             return "Mi nombre es "+self.getNombre()+", tengo una edad de "+str(self.getEdad())+", habito en "+self.getHabitat()+" y mi genero es "+self.getGenero()
         
-    def setNombre(self,a): self._nombre=a
-    def getNombre(self): return self._nombre
-    def setEdad(self,a): self._edad=a
-    def getEdad(self): return self._edad
-    def setHabitat(self,a): self._habitat=a
-    def getHabitat(self): return self._habitat
-    def setGenero(self,a): self._genero=a
-    def getGenero(self): return self._genero
-    def setZona(self,a): self._zona=a
-    def getZona(self): return self._zona
+        
     
     @classmethod
     def getTotalAnimales(cls):
@@ -40,3 +32,13 @@ class Animal:
     @classmethod
     def cantidadAnfibios(cls): return cls._totalAnfibios
     
+    def setNombre(self,a): self._nombre=a
+    def getNombre(self): return self._nombre
+    def setEdad(self,a): self._edad=a
+    def getEdad(self): return self._edad
+    def setHabitat(self,a): self._habitat=a
+    def getHabitat(self): return self._habitat
+    def setGenero(self,a): self._genero=a
+    def getGenero(self): return self._genero
+    def setZona(self,a): self._zona=a
+    def getZona(self): return self._zona
